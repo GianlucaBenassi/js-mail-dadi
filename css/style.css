@@ -16,6 +16,7 @@ body {
     width: 80%;
     margin: 50px auto;
     padding: 50px 0;
+    border-radius: 20px;
 }
 
 h1 {
