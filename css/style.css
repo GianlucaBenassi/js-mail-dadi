@@ -1,3 +1,5 @@
+/* ***** commons ***** */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 body {
     background-color: #161E54;
+    font-size: 18px;
 }
 
 .container {
@@ -31,23 +34,27 @@ button {
     transition: all .2s linear;
 }
 
-
-
 button:hover { 
   background-color: #16437E;
 }
 
+button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+
+/* ***** login ***** */
 
 #email-check {
     background-color: #FF5151;
 }
 
+
+/* ***** dice ***** */
+
 #dice-game {
     background: #88E0EF;
-}
-
-#login-result {
-    display: block;
 }
 
 .row {
