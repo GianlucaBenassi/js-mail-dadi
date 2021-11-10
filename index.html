@@ -9,6 +9,9 @@
     <!-- link my css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     
@@ -18,14 +21,22 @@
         <input type="email" id="email">
 
         <button id="login">Accedi</button>
-        <span id="login-result"></span>
     </div>
 
 
     <!-- dice game -->
     <div class="container">
-        <span id="user-number">Numero giocatore: </span>
-        <span id="computer-number">Numero computer: </span>
+        <div class="row">
+            <div class="col">
+                <span>Numero giocatore:</span>
+                <span id="user-dice"></span>
+            </div>
+            <div class="col">
+                <span>Numero computer:</span>
+                <span id="computer-dice"></span>
+            </div>
+        </div>
+        
         <button id="roll-dice">Lancia i dadi</button>
         <span id="game-result"></span>
     </div>

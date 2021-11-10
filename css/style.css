@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+#login-result {
+    display: block;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
