@@ -5,11 +5,11 @@ const btnLogin = document.getElementById("login");
 
 btnLogin.addEventListener("click", function() {
     const userEmail = document.getElementById("email").value;
-    const spanResult = document.getElementById("login-result");
+    const spanLoginResult = document.getElementById("login-result");
     let emailCheck = false;
     
     if (userEmail == "") {
-        spanResult.innerHTML = "Inserire una email!";
+        spanLoginResult.innerHTML = "Inserire una email!";
     } else {
 
         for (let i = 0; i < mailList.length; i++) {
@@ -19,10 +19,33 @@ btnLogin.addEventListener("click", function() {
         }
 
         if (emailCheck) {
-            spanResult.innerHTML = "Accesso eseguito!"
+            spanLoginResult.innerHTML = "Accesso eseguito!"
         } else {
-            spanResult.innerHTML = "Email non valida!"
+            spanLoginResult.innerHTML = "Email non valida!"
         }
 
     }
+});
+
+
+// dice
+
+const btnDice = document.getElementById("roll-dice");
+
+btnDice.addEventListener("click", function(){
+    const spanGameResult = document.getElementById("game-result");
+    const userNumber = Math.floor(Math.random() * 6) + 1;
+    const computerNumber = Math.floor(Math.random() * 6) + 1;
+
+    document.getElementById("user-number").innerHTML += userNumber;
+    document.getElementById("computer-number").innerHTML += computerNumber;
+
+    if (userNumber > computerNumber) {
+        spanGameResult.innerHTML = "Hai vinto!";
+    } else if (userNumber < computerNumber) {
+        spanGameResult.innerHTML = "Hai perso!";
+    } else {
+        spanGameResult.innerHTML = "Pareggio!";
+    }
+
 });
