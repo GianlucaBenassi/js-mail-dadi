@@ -4,10 +4,27 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #161E54;
+}
+
 .container {
     text-align: center;
     width: 80%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#email-check {
+    background-color: #FF5151;
+}
+
+#dice-game {
+    background: #88E0EF;
 }
 
 #login-result {
@@ -20,6 +37,20 @@
 }
 
 .col {
+    min-height: 100px;
     display: flex;
     flex-direction: column;
+    margin: 10px 20px;
+}
+
+.dice {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#game-result {
+    min-height: 40px;
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
 }
